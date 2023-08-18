@@ -9,8 +9,6 @@ Nesta tarefa você irá verificar o funcionamento de algumas primitivas de sincr
 
 3. O que ocorre se `Fila` possui menos espaço que o necessário para produtores? O que ocorre na execução do código? O que deveria ocorrer na execução do código, supondo uma solução correta para o problema de produtor-consumidor?
 
-# atrasos e concorrencia
-
 4. Mude os atrasos em produtor e consumidor, realizando modificações no código `time.sleep(random.uniform(ATRASO_MENOR, ATRASO_MAIOR))`, que estão variando entre 1ms e 10ms. Veja o efeito na concorrência do código.
 5. Aumente o tamanho máximo da fila, deixando-a muito maior que o número de elemento produzidos. Qual é o efeito na concorrência? Qual seria o efeito esperado, supondo uma solução correta para o problema de produtor-consumidor?
 6. Acrescente atrasos na fila no depósito e/ou consumo na seção de código
