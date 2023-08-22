@@ -1,6 +1,6 @@
 public class Produtor extends Thread{
 
-   public final static int MAX = 10;
+   public final static int MAX = 1;
 
 
    private String nome;
@@ -15,7 +15,8 @@ public class Produtor extends Thread{
      for (int i = 0; i < MAX; i++) {
         Fila.esperaTempo();
         this.fila.deposita(i);
-        System.out.println(">> Produtor [" + nome  + "] depositou " + String.valueOf(i));
+        System.out.println(this.nome + ";D(" + String.valueOf(i) + ")");
+        System.out.flush();
      }
    }
 }

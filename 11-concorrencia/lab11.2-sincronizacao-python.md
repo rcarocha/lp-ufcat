@@ -33,13 +33,21 @@ Nesta tarefa você irá verificar o funcionamento de algumas primitivas de sincr
 1. Abra o código `problema-sincronizacao.py`. Investigue o código e veja a saída e concorrência entre os processos.
 2. Utilizando as mesmas construções de sincronização baseadas em `Lock` (e suas primitivas `acquire` e `release`) do código anterior e em semáforos, incluia uma sincronização entre as tarefas de maneira que, independentemente de qualquer condição, ordem no código ou temporização entre as tarefas, as seguintes condições sejam satisfeitas:
 
-   1. A primeira tarefa a iniciar, gerando "I" na saída, seja a tarefa `t2`.
+   1. A primeira tarefa a iniciar, gerando **"I"** na saída, seja a tarefa `t2`.
 
       Copie a classe `Tarefa` em `Tarefa1` e `Tarefa2` para facilitar a modificação individual de cada tarefa. Coloque temporizações no código de maneira a garantir que o seu código está correto.
 
 3. Faça modificações no código, de maneira que haja **três** tarefas (crie uma terceira) e as seguintes condições sejam atendidas:
 
-   1. A primeira tarefa a iniciar, gerando "I" na saída, seja a tarefa `t3`.
-   2. Todas as tarefas devem executar a última ação ("F" na saída) uma após a outra, considerando em qualquer ordem.
+   1. A primeira tarefa a iniciar, gerando **"I"** na saída, seja a tarefa `t3`.
+   2. Todas as tarefas devem executar a última ação (**"F"** na saída) uma após a outra, considerando em qualquer ordem.
 
    Documentação de `Lock`: https://docs.python.org/3/library/threading.html#lock-objects
+
+## Relatório
+
+Inclua o código com a sincronização solicitada no item **(3)** no arquivo 
+
+* [relatorio/produtor-consumidor.py](relatorio/produtor-consumidor.py).
+
+Procure não utilizar outro nove para esta resposta, pois este arquivo é que será procurado na correção.

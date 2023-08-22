@@ -13,7 +13,9 @@ public class Consumidor extends Thread{
     public void run() {
         for (int i = 0; i < MAX; i++) {
            int retirado = this.fila.retira();
-           System.out.println("<< Processo [" + nome  + "] retirou " + String.valueOf(retirado));
+           //System.out.println("<< Processo [" + nome  + "] retirou " + String.valueOf(retirado));
+           System.out.println(this.nome + ";R(" + String.valueOf(retirado) + ")");
+           System.out.flush();
         }
     }
 
